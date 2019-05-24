@@ -1,0 +1,20 @@
+{
+    "name": "drlenux/bc_math",
+    "description": "PHP BcMath factory",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DrLenux",
+            "email": "drlenux@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DrLenux\\BcMath\\": "src/"
+        }
+    }
+}
