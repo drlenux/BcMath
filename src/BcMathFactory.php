@@ -1,6 +1,6 @@
 <?php
 
-namespace Drlenux\BcMath;
+namespace DrLenux\BcMath;
 
 /**
  * Class BcMathFactory
