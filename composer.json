@@ -1,11 +1,13 @@
 {
-    "name": "drlenux/bc_math",
+    "name": "drlenux/bc-math",
     "description": "PHP BcMath factory",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "DrLenux",
-            "email": "drlenux@gmail.com"
+            "email": "drlenux@gmail.com",
+            "homepage": "https://drlenux.name"
         }
     ],
     "require": {
