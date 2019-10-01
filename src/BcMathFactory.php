@@ -10,6 +10,7 @@ final class BcMathFactory implements BcMathInterface
 {
     /**
      * @return static
+     * @deprecated
      */
     public static function instance()
     {
