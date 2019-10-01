@@ -1,8 +1,6 @@
 <?php
 
-
-namespace Drlenux\BcMath;
-
+namespace DrLenux\BcMath;
 
 interface BcMathInterface
 {
