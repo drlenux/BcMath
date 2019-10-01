@@ -8,7 +8,24 @@ namespace Drlenux\BcMath;
  */
 final class BcMathFactory implements BcMathInterface
 {
-    use Singleton;
+    /**
+     * @return static
+     */
+    public static function instance()
+    {
+        static $instance;
+        if (null === $instance) {
+            $instance = new static();
+        }
+        return $instance;
+    }
+
+    /**
+     * BcMathFactory constructor.
+     */
+    private function __construct()
+    {
+    }
 
     /**
      * @var bool
