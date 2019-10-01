@@ -2,6 +2,10 @@
 
 namespace DrLenux\BcMath;
 
+/**
+ * Interface BcMathInterface
+ * @package DrLenux\BcMath
+ */
 interface BcMathInterface
 {
     /**
@@ -10,7 +14,7 @@ interface BcMathInterface
      * @param int $scale
      * @return string
      */
-    public static function bcadd (string $left_operand, string $right_operand, ?int $scale = null): string;
+    public function bcadd (string $left_operand, string $right_operand, ?int $scale = null): string;
 
     /**
      * @param string $left_operand
@@ -18,7 +22,7 @@ interface BcMathInterface
      * @param int $scale
      * @return string
      */
-    public static function bcsub (string $left_operand, string $right_operand, ?int $scale = null): string;
+    public function bcsub (string $left_operand, string $right_operand, ?int $scale = null): string;
 
     /**
      * @param string $left_operand
@@ -26,7 +30,7 @@ interface BcMathInterface
      * @param int $scale
      * @return string
      */
-    public static function bcmul (string $left_operand, string $right_operand, ?int $scale = null): string;
+    public function bcmul (string $left_operand, string $right_operand, ?int $scale = null): string;
 
 
     /**
@@ -35,7 +39,7 @@ interface BcMathInterface
      * @param int $scale
      * @return mixed
      */
-    public static function bcdiv (string $dividend, string $divisor, ?int $scale = null): string;
+    public function bcdiv (string $dividend, string $divisor, ?int $scale = null): string;
 
     /**
      * @param string $dividend
@@ -43,7 +47,7 @@ interface BcMathInterface
      * @param int $scale
      * @return string
      */
-    public static function bcmod (string $dividend, string $divisor, ?int $scale = null): string;
+    public function bcmod (string $dividend, string $divisor, ?int $scale = null): string;
 
     /**
      * @param string $base
@@ -51,19 +55,19 @@ interface BcMathInterface
      * @param int $scale
      * @return string
      */
-    public static function bcpow (string $base, string $exponent, ?int $scale = null): string;
+    public function bcpow (string $base, string $exponent, ?int $scale = null): string;
 
     /**
      * @param string $operand
      * @param int|null $scale
      * @return string
      */
-    public static function bcsqrt (string $operand, ?int $scale = null): string;
+    public function bcsqrt (string $operand, ?int $scale = null): string;
 
     /**
      * @param int $scale
      */
-    public static function bcscale (int $scale): void;
+    public function bcscale (int $scale): void;
 
     /**
      * @param string $left_operand
@@ -71,7 +75,7 @@ interface BcMathInterface
      * @param int $scale
      * @return int
      */
-    public static function bccomp (string $left_operand, string $right_operand, ?int $scale = null): int;
+    public function bccomp (string $left_operand, string $right_operand, ?int $scale = null): int;
 
     /**
      * @param string $base
@@ -80,5 +84,5 @@ interface BcMathInterface
      * @param int $scale
      * @return string|null
      */
-    public static function bcpowmod (string $base, string $exponent, string $modulus, ?int $scale = null): ?string;
+    public function bcpowmod (string $base, string $exponent, string $modulus, ?int $scale = null): ?string;
 }
