@@ -62,9 +62,8 @@ interface BcMathInterface
 
     /**
      * @param int $scale
-     * @return int
      */
-    public static function bcscale (int $scale): int;
+    public static function bcscale (int $scale): void;
 
     /**
      * @param string $left_operand
