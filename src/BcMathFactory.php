@@ -9,19 +9,6 @@ namespace DrLenux\BcMath;
 final class BcMathFactory implements BcMathInterface
 {
     /**
-     * @return static
-     * @deprecated
-     */
-    public static function instance()
-    {
-        static $instance;
-        if (null === $instance) {
-            $instance = new static();
-        }
-        return $instance;
-    }
-
-    /**
      * BcMathFactory constructor.
      */
     private function __construct()
