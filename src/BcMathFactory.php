@@ -163,15 +163,14 @@ final class BcMathFactory implements BcMathInterface
 
     /**
      * @param int $scale
-     * @return int
      */
-    public static function bcscale(int $scale): int
+    public static function bcscale(int $scale): void
     {
         if (function_exists('bcscale') && self::$runBcMath) {
-            return bcscale(self::getScale($scale));
+            bcscale(self::getScale($scale));
         } else {
             self::$error = true;
-            return $scale;
+            self::$scale = $scale;
         }
     }
 
